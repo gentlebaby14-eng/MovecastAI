@@ -1,5 +1,9 @@
 # MoveCast AI
 
+🔗 Demo
+https://gentlebaby14-eng.github.io/MovecastAI/
+
+
 ## 프로젝트 소개
 
 MoveCast AI는 AI 기반 전국 도시 혼잡 예측 및 대응 의사결정 지원 플랫폼입니다.
