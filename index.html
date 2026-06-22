@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoveCast AI | 전국 도시 혼잡 대응 플랫폼</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">M</div>
+      <div>
+        <h1>MoveCast AI</h1>
+        <p>전국 도시 혼잡 대응 플랫폼</p>
+      </div>
+    </div>
+
+    <nav class="side-nav">
+      <a href="#dashboard">대시보드</a>
+      <a href="#predict">AI 예측</a>
+      <a href="#decision">대응 의사결정</a>
+      <a href="#notice">시민 알림</a>
+      <a href="#review">사후 평가</a>
+    </nav>
+  </aside>
+
+  <main class="layout">
+    <section id="dashboard" class="hero-panel">
+      <div>
+        <p class="eyebrow">National Smart City Decision Support</p>
+        <h2>AI 기반 전국 도시 혼잡 예측 및 
+          <br>대응 의사결정 지원 플랫폼</h2>
+        <p class="desc">
+          시·도, 시·군·구, 장소 유형, 주요 거점, 날씨, 행사 정보를 기반으로<br>
+          혼잡도를 예측하고 교통·안전·홍보 부서별 대응 방안을 추천합니다.
+        </p>
+      </div>
+
+      <div class="hero-status">
+        <span>오늘의 위험 지역</span>
+        <strong>5곳</strong>
+        <p>전국 주요 거점 모니터링 중</p>
+      </div>
+    </section>
+
+    <section class="panel">
+    <div class="section-title">
+      <div>
+        <p class="eyebrow">National Risk Map</p>
+        <h3>전국 혼잡 위험지도</h3>
+      </div>
+    </div>
+
+    <div class="korea-map">
+      <div class="map-dot red" style="top: 22%; left: 45%;">
+        서울
+        <span>매우 혼잡</span>
+      </div>
+
+      <div class="map-dot orange" style="top: 67%; left: 58%;">
+        부산
+        <span>혼잡</span>
+      </div>
+
+      <div class="map-dot yellow" style="top: 39%; left: 43%;">
+        경기
+        <span>주의</span>
+      </div>
+
+      <div class="map-dot yellow" style="top: 48%; left: 47%;">
+        대전
+        <span>주의</span>
+      </div>
+
+      <div class="map-dot orange" style="top: 88%; left: 34%;">
+        제주
+        <span>혼잡</span>
+      </div>
+    </div>
+  </section>
+
+
+    <section class="summary-grid">
+      <article class="summary-card danger">
+        <span>4단계</span>
+        <strong>매우 혼잡</strong>
+        <p>비상 대응 체계 가동</p>
+      </article>
+      <article class="summary-card orange">
+        <span>3단계</span>
+        <strong>혼잡</strong>
+        <p>적극 대응 필요</p>
+      </article>
+      <article class="summary-card yellow">
+        <span>2단계</span>
+        <strong>주의</strong>
+        <p>사전 대응 권장</p>
+      </article>
+      <article class="summary-card green">
+        <span>1단계</span>
+        <strong>보통</strong>
+        <p>모니터링 유지</p>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Risk Ranking</p>
+          <h3>오늘의 전국 혼잡 위험 지역 TOP 5</h3>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>순위</th>
+              <th>지역</th>
+              <th>장소 유형</th>
+              <th>예상 피크</th>
+              <th>위험도</th>
+              <th>권장 조치</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>서울 송파구 잠실종합운동장</td>
+              <td>경기장/공연장</td>
+              <td>21:00~22:00</td>
+              <td><span class="badge danger">매우 혼잡</span></td>
+              <td>셔틀·안전요원 집중 배치</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>부산 수영구 광안리해수욕장</td>
+              <td>관광지</td>
+              <td>19:00~21:00</td>
+              <td><span class="badge orange">혼잡</span></td>
+              <td>주차 우회 안내</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>제주 제주시 제주공항</td>
+              <td>공항/교통 거점</td>
+              <td>16:00~19:00</td>
+              <td><span class="badge orange">혼잡</span></td>
+              <td>택시 승강장 분산</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>경기 수원시 수원역</td>
+              <td>역/환승센터</td>
+              <td>18:00~20:00</td>
+              <td><span class="badge yellow">주의</span></td>
+              <td>모니터링 강화</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>대전 중구 중앙로</td>
+              <td>상권</td>
+              <td>15:00~18:00</td>
+              <td><span class="badge yellow">주의</span></td>
+              <td>안내 인력 배치 검토</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="predict" class="grid-two">
+      <div class="panel">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">AI Prediction</p>
+            <h3>혼잡 예측 조건 입력</h3>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <label>
+            시·도
+            <select id="sido">
+              <option value="seoul">서울특별시</option>
+              <option value="busan">부산광역시</option>
+              <option value="incheon">인천광역시</option>
+              <option value="daejeon">대전광역시</option>
+              <option value="gyeonggi">경기도</option>
+              <option value="jeju">제주특별자치도</option>
+            </select>
+          </label>
+
+          <label>
+            시·군·구
+            <select id="sigungu"></select>
+          </label>
+
+          <label>
+            장소 유형
+            <select id="placeType"></select>
+          </label>
+
+          <label>
+            주요 거점
+            <select id="spot"></select>
+          </label>
+
+          <label>
+            요일
+            <select id="day">
+              <option value="weekday">평일</option>
+              <option value="weekend">주말/공휴일</option>
+            </select>
+          </label>
+
+          <label>
+            날씨
+            <select id="weather">
+              <option value="sunny">맑음</option>
+              <option value="rain">비</option>
+              <option value="snow">눈</option>
+              <option value="heat">폭염</option>
+            </select>
+          </label>
+
+          <label>
+            행사 유형
+            <select id="eventType">
+              <option value="none">행사 없음</option>
+              <option value="festival">지역 축제</option>
+              <option value="concert">콘서트</option>
+              <option value="sports">스포츠 경기</option>
+            </select>
+          </label>
+
+          <label>
+            예상 방문객 수
+            <input id="visitors" type="number" min="0" value="20000" />
+          </label>
+
+          <label>
+            시간대
+            <select id="time">
+              <option value="morning">오전</option>
+              <option value="afternoon">오후</option>
+              <option value="evening">저녁</option>
+              <option value="night">밤</option>
+            </select>
+          </label>
+
+          <label>
+            주변 주차장 수
+            <input id="parking" type="number" min="0" value="4" />
+          </label>
+
+          <label>
+            대중교통 접근성
+            <select id="transit">
+              <option value="high">높음</option>
+              <option value="medium">보통</option>
+              <option value="low">낮음</option>
+            </select>
+          </label>
+        </div>
+
+        <button class="primary-btn" onclick="runPrediction()">AI 혼잡 예측 실행</button>
+
+        <p class="helper-text">
+          ※ 현재 웹페이지는 HTML/CSS/JS 기반 정적 데모입니다. 실제 서비스에서는 공공데이터와 Python AI 모델을 연동할 수 있습니다.
+        </p>
+      </div>
+
+      <div class="panel result-panel">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">Prediction Result</p>
+            <h3>지역 상세 분석</h3>
+          </div>
+        </div>
+
+        <div class="result-cards">
+          <div>
+            <span>선택 거점</span>
+            <strong id="selectedSpot">-</strong>
+          </div>
+          <div>
+            <span>예상 유동인구</span>
+            <strong id="population">-</strong>
+          </div>
+          <div>
+            <span>평소 대비</span>
+            <strong id="increase">-</strong>
+          </div>
+          <div>
+            <span>혼잡 위험도</span>
+            <strong id="risk">-</strong>
+          </div>
+          <div>
+            <span>대응 단계</span>
+            <strong id="level">-</strong>
+          </div>
+          <div>
+            <span>예상 피크 시간</span>
+            <strong id="peakTime">-</strong>
+          </div>
+        </div>
+
+        <div class="map">
+          <div class="map-line horizontal"></div>
+          <div class="map-line vertical"></div>
+          <div class="map-zone z1">교통 거점</div>
+          <div class="map-zone z2">행사장</div>
+          <div class="map-zone z3">상권</div>
+          <div class="map-zone z4">주차장</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="analysis" class="panel hidden">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Explainable AI</p>
+          <h3>혼잡 원인 분석</h3>
+        </div>
+      </div>
+      <ul id="reasonList" class="reason-list"></ul>
+    </section>
+
+    <section id="decision" class="panel hidden">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Decision Support</p>
+          <h3>부서별 대응 의사결정 지원</h3>
+        </div>
+      </div>
+
+      <div class="decision-grid">
+        <article class="dept-card">
+          <h4>교통과</h4>
+          <ul id="trafficActions"></ul>
+        </article>
+
+        <article class="dept-card">
+          <h4>안전총괄과</h4>
+          <ul id="safetyActions"></ul>
+        </article>
+
+        <article class="dept-card">
+          <h4>홍보·민원 부서</h4>
+          <ul id="publicActions"></ul>
+        </article>
+      </div>
+
+      <div class="resource-grid">
+        <div>
+          <span>권장 셔틀버스</span>
+          <strong id="busCount">-</strong>
+        </div>
+        <div>
+          <span>권장 안전요원</span>
+          <strong id="staffCount">-</strong>
+        </div>
+        <div>
+          <span>교통 안내 인력</span>
+          <strong id="guideCount">-</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="notice" class="panel hidden">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Citizen Notice</p>
+          <h3>시민 알림 문구 자동 생성</h3>
+        </div>
+        <button class="copy-btn" onclick="copyNotice()">문구 복사</button>
+      </div>
+
+      <div class="notice-box" id="noticeText">
+        AI 예측 실행 후 시민 알림 문구가 생성됩니다.
+      </div>
+    </section>
+
+    <section id="review" class="panel">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">After Action Review</p>
+          <h3>사후 평가 및 모델 개선 구조</h3>
+        </div>
+      </div>
+
+      <div class="review-flow">
+        <div>예측값 저장</div>
+        <span>→</span>
+        <div>실제 혼잡도 입력</div>
+        <span>→</span>
+        <div>오차 분석</div>
+        <span>→</span>
+        <div>AI 모델 재학습</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
